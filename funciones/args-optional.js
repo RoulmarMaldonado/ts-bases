@@ -1,7 +1,7 @@
 "use strict";
 (function () {
     var fullName = function (firstName, lastName) {
-        return firstName + " " + (lastName || '----');
+        return "".concat(firstName, " ").concat(lastName || '----');
     };
     var name = fullName('Tony');
     console.log({ name: name });

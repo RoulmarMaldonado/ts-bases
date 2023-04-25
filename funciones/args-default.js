@@ -3,10 +3,10 @@
     var fullName = function (firstName, lastName, upper) {
         if (upper === void 0) { upper = false; }
         if (upper) {
-            return (firstName + " " + (lastName || '----')).toUpperCase();
+            return "".concat(firstName, " ").concat(lastName || '----').toUpperCase();
         }
         else {
-            return firstName + " " + (lastName || '----');
+            return "".concat(firstName, " ").concat(lastName || '----');
         }
     };
     var name = fullName('Tony', 'Stark', true);
